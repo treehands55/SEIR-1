@@ -3,7 +3,22 @@ Instructions:
 
 Follow the instructor's guidance for how to make a homepage with a VM.
 
-at the end of the lesson, SSH into your VM and curl it
+Show your work:
+1) Browser proof
+        Open: http://<EXTERNAL_IP>/
 
+
+2) at the end of the lesson, SSH into your VM and curl it
     curl localhost
+    curl -s localhost | head
+
+3) Service Proof
+    systemctl status nginx --no-pager
+
+Bonus: For the fearless who want some head.
+
+If you want the page to refresh every 10 seconds (extra dopamine):
+
+Add this inside <head>:
+    <meta http-equiv="refresh" content="10">
 
